@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slob', sans-serif;
+    font-size: 38px;
+    background-color: #ccc;
+    padding: 0;
+	margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* モーダルウィンドウ */
+
+.several_modals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: rosybrown;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgba(188, 143, 143, 0.589);
+    transition: 0.3s;
+}
+
+.btn-close {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid;
+    color: #000;
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 5;
+    right: 5;
+}
+
+.btn-close:hover {
+    background-color: rgba(188, 143, 143, 0.589);
+    transition: 0.3s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.modal {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 2;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*モーダルの背景(影)があれば*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#overlay.active {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-h1 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.modal-p {
+    margin: 0;
+}
+/*////////////////////////////////////*/
+
+
+/* ②ページのスクロールに合わせて画像が表示される のstyle*/
+
+.reveal {
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+/*////////////////////////////////////*/
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 930px) {
+    p {
+        font-size: 15px;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .several_modals {
+        width: 300px;
+    }
+
+}

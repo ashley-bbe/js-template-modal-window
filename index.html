@@ -1,0 +1,41 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Template Modal Window</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="several_modals" id="modals">
+            <button class="btn" data-target="#modal1">Modal 1</button>
+            <button class="btn" data-target="#modal2">Modal 2</button>
+
+            <div class="modal" id="modal1">
+                <button class="btn-close" data-target="#modal1">&times;</button>
+                <div class="modal-text">
+                   <h1 class="modal-h1">Modal A</h1>
+                    <p class="modal-p">Bonjour !</p> 
+                </div>
+                
+            </div>
+
+            <div class="modal" id="modal2">
+                <button class="btn-close" data-target="#modal2">&times;</button>
+                <div class="modal-text">
+                   <h1 class="modal-h1">Modal B</h1>
+                <p class="modal-p">Au revoir !</p> 
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
