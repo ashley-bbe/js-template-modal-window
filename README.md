@@ -1,7 +1,10 @@
 # MODAL WINDOW
 
 ## 説明・概要
+
 JavaScriptで実装したモーダルウィンドウです。
+
+[サイトはこちら](https://ashley-bbe.github.io/js-template-modal-window/)
 
 ## 指示・目的
 
@@ -15,4 +18,14 @@ JavaScriptで実装したモーダルウィンドウです。
     * モーダルBを表示させるためのボタンを押す→モーダルBが表示  
 
 ## デモ
+
+![modal1](https://user-images.githubusercontent.com/112611182/188103042-c5f6fdc8-0d98-41c4-8456-f469a652a36e.jpg)
+![modal2](https://user-images.githubusercontent.com/112611182/188103031-16891567-671a-4a93-8db2-8156cab2dc53.jpg)
+![modal3](https://user-images.githubusercontent.com/112611182/188103039-d3f0496b-301f-4b57-b9f8-a12b7883198f.jpg)
+
+## 使ってる言語・フレームワーク
+
+* HTML
+* CSS
+* JavaScript
 
